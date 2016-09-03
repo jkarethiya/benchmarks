@@ -4,10 +4,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class LockedClass {
 
-
-	
-	
-	
 	public int loop_count = 5;
 
 
@@ -16,10 +12,10 @@ public class LockedClass {
     private final ReentrantLock lock = new ReentrantLock();
 
 
-   public static  long consumedCPU;
+	public static  long consumedCPU;
 
-   public  long methodWithoutSynchronization(int count)
-   {
+	public  long methodWithoutSynchronization(int count)
+	{
 	 
 
        for (long i = count; i > 0; i--) {
